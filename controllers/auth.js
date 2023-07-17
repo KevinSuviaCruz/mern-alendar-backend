@@ -83,10 +83,14 @@ const revalidateToken = async (req, res = response) => {
 
   res.json({
     ok: true,
+    uid,
+    name,
     token
   })
 }
 
 module.exports = {
-  createUser, loginUser, revalidateToken
+  createUser,
+  loginUser,
+  revalidateToken
 }
